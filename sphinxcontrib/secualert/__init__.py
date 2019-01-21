@@ -8,8 +8,15 @@ from docutils import nodes
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import set_source_info
 from sphinx.util.texescape import tex_escape_map
+from sphinx.locale import get_translation
 from sphinx.environment import NoUri
-from sphinx.locale import _
+
+import os.path
+
+
+# Utilities  ----------------------------------------------------------------
+
+_ = get_translation(__name__)
 
 
 # Nodes  --------------------------------------------------------------------
@@ -206,6 +213,11 @@ def setup(app):
     """Sphinx extension initialization.
     """
     app.add_event('secualert-defined')
+
+    # I18n initialization for the extension
+    locale_dirpath = os.path.join(os.path.abspath(os.path.dirname(__file__)),
+                                  'locale')
+    app.add_message_catalog(__name__, locale_dirpath)
 
     app.add_node(secualertlist_node)
     app.add_node(secualert_node,
