@@ -1,0 +1,9 @@
+A document...
+=============
+
+Blablah...
+
+.. secualert:: Test d'alerte!
+
+Blablah...
+
