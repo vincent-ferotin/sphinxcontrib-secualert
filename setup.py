@@ -20,7 +20,7 @@ REQUIRES = [
 setup(
     name='sphinxcontrib-secualert',
     version='0.1',
-    license='BSD',
+    license='BSD 2-Clause License',
     author='Vincent Férotin',
     author_email='vincent.ferotin@gmail.com',
     description='Sphinx "secualert" extension',

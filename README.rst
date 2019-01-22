@@ -3,6 +3,11 @@
 
 This package contains the `secualert` `Sphinx`_ extension.
 
+:project: `sphinxcontrib-secualert`
+:version: 0.1
+:authors: Vincent Férotin, Sphinx team
+:license: BSD 2-Clause License (see `LICENSE` file)
+
 This extension was created to specifically list as security alerts
 items previously targeted as `todo`, and allow listing all alerts
 in one list, different from `todolist`.
