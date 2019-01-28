@@ -26,7 +26,7 @@ msgstr "Alerte de sécurité"
 #: sphinxcontrib/secualert/__init__.py:128
 #, python-format
 msgid "(The <<original entry>> is located in %s, line %d.)"
-msgstr "(L'entrée originelle se trouve dans %s ligne %d.)"
+msgstr "(L'<<entrée originelle>> se trouve dans %s ligne %d.)"
 
 #: sphinxcontrib/secualert/__init__.py:137
 msgid "original entry"
