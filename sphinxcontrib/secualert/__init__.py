@@ -14,9 +14,15 @@ from sphinx.environment import NoUri
 import os.path
 
 
+# Constants  ----------------------------------------------------------------
+
+MODULE_NAME = "secualert"
+# This will also be used as POT filename.
+
+
 # Utilities  ----------------------------------------------------------------
 
-_ = get_translation(__name__)
+_ = get_translation(MODULE_NAME)
 
 
 # Nodes  --------------------------------------------------------------------
@@ -217,7 +223,7 @@ def setup(app):
     # I18n initialization for the extension
     locale_dirpath = os.path.join(os.path.abspath(os.path.dirname(__file__)),
                                   'locale')
-    app.add_message_catalog(__name__, locale_dirpath)
+    app.add_message_catalog(MODULE_NAME, locale_dirpath)
 
     app.add_node(secualertlist_node)
     app.add_node(secualert_node,
