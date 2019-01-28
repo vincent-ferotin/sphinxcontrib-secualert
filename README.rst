@@ -11,6 +11,7 @@ This package contains the `secualert` `Sphinx`_ extension.
 This extension was created to specifically list as security alerts
 items previously targeted as `todo`, and allow listing all alerts
 in one list, different from `todolist`.
+It was developped from a copy of :mod:`sphinx.ext.todo`.
 
 
 Usage
@@ -42,7 +43,7 @@ This extension introduces two new directives:
 *   ``.. secualertlist::`` for re-listing in one place all security-related
     alerts items.
 
-Intended usage is same as `sphinx.ext.todo` extension:
+Intended usage is same as :mod:`sphinx.ext.todo` extension:
 
 .. code-block:: rst
 
